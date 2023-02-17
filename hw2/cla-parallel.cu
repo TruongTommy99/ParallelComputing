@@ -380,11 +380,17 @@ void cla()
   //       assignment description.
   /***********************************************************************************************************/
     compute_gp();
+    cudaDeviceSynchronize();
     compute_group_gp();
+    cudaDeviceSynchronize();
     compute_section_gp();
+    cudaDeviceSynchronize();
     compute_super_section_gp();
+    cudaDeviceSynchronize();
     compute_super_super_section_gp();
+    cudaDeviceSynchronize();
     compute_super_super_section_carry();
+    cudaDeviceSynchronize();
     compute_super_section_carry();
     compute_section_carry();
     compute_group_carry();
